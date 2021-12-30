@@ -8,12 +8,13 @@
 .main-menu__list{
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   @media (min-width: 768px){
    justify-content: center;}
-   @media screen and (min-width: 1200px){
-     margin-bottom: 50px;
-}}
+   @media screen and (min-width: 768px){
+     margin-bottom: 15px;}
+      @media screen and (min-width: 1200px){
+     margin-bottom: 35px;}}
 .main-menu__buttons{
   display: none;
 }
@@ -21,7 +22,15 @@
   margin-right: 8px;
   flex-basis: calc(100% / 2- 30px);  
   margin-bottom: 15px;
+  &:last-child{
+  margin-bottom: 0px;
+margin-right: 0px;}
+  &:nth-child(4){
+    margin-bottom: 0px;}
+   @media (min-width: 768px){
+   margin-bottom: 0px;}
 }
+
 .main-menu__main-btn{
   @include font(16px, 1.62, 0.03em, 500 );
   font-family: Roboto;
